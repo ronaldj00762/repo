@@ -1,0 +1,17 @@
+echo "# repo-name" >> readme.md
+git init
+git add readme.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ronaldj00762/repo-name.git
+git push -u origin main
+"bare"
+$ git clone --bare https://external-host.com/extuser/repo.git
+# Makes a bare clone of the external repository in a local directory
+$ cd repo.git
+$ git push --mirror https://github.com/ghuser/repo.git
+# pushes the mirror to the new Github repository
+$cd..
+$ rm -rf repo.git
+...
+
